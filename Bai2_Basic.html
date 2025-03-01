@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài 2</title>
+  </head>
+  <body>
+    <script>
+      let math = +prompt(`Mời nhập điểm Toán`);
+      let literture = +prompt(`Mời nhập điểm Văn`);
+      let english = +prompt(`Mời nhập điểm Anh`);
+
+      const avg = (math + literture + english) / 3;
+
+      if (avg >= 8 && avg <= 10) {
+        console.log(`Học lực: Giỏi`);
+      } else if (avg >= 6.5 && avg < 8) {
+        console.log(`Học lực: Khá`);
+      } else if (avg >= 5 && avg < 6) {
+        console.log(`Học lực: Trung bình`);
+      } else {
+        console.log(`Học lực: Yếu`);
+      }
+    </script>
+  </body>
+</html>

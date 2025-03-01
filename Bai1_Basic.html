@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài 1</title>
+  </head>
+  <body>
+    <script>
+      let number = +prompt(`Mời nhập vào 1 số nguyên`);
+      let check = Number.isInteger(number);
+      if (check) {
+        if (number % 2 === 0) {
+          console.log(`${number} là số chẵn`);
+        } else {
+          console.log(`${number} là số lẻ`);
+        }
+      } else {
+        console.log(`${number} không phải số nguyên`);
+      }
+    </script>
+  </body>
+</html>
