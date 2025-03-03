@@ -4,12 +4,21 @@ let second = +prompt(`Nhập vào giây`);
 
 let hourUnit;
 
+// if(hour >= 0 && hour <= 12){
+//     hourUnit = "AM";
+//     hour = hour % 12;
+//     console.log(`${hour}:${minute}:${second} ${hourUnit}`);    
+// }else if(hour >= 12 && hour <= 24){
+//     hourUnit = "PM";
+//     hour = hour % 12;
+//     console.log(`${hour}:${minute}:${second} ${hourUnit}`);    
+// }
+
 if(hour >= 0 && hour <= 12){
     hourUnit = "AM";
-    hour = hour % 12;
-    console.log(`${hour}:${minute}:${second} ${hourUnit}`);    
-}else if(hour > 13 && hour <= 24){
+    console.log(`${hour}:${minute}:${second} ${hourUnit}`)
+}else if(hour > 12 && hour <= 24){
     hourUnit = "PM";
-    hour = hour % 12;
-    console.log(`${hour}:${minute}:${second} ${hourUnit}`);    
+    hour = hour - 12;
+    console.log(`${hour}:${minute}:${second} ${hourUnit}`)
 }
